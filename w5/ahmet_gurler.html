@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ahmet Gürler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+
+    :root{
+      --bg:#050a08;
+      --panel:#0f1a14;
+      --green:#00ff41;
+      --neon:#39ff14;
+      --dim:#008f11;
+      --info:#00ffff;
+    }
+
+    body{
+      background:var(--bg);
+      color:var(--green);
+      font-family:'Courier New', monospace;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+    }
+
+    .container{
+      max-width:1100px;
+      width:100%;
+      padding:2rem;
+    }
+
+    /* ===== HOCANIN NEON İSİM STİLİ ===== */
+    .hero-name{
+      font-family:'Orbitron', monospace;
+      font-size:4.5rem;
+      letter-spacing:4px;
+      text-align:center;
+      margin:2rem 0 1rem;
+      color:var(--neon);
+      text-shadow:
+        0 0 5px  #39ff14,
+        0 0 10px #39ff14,
+        0 0 20px #00ff41,
+        0 0 40px #00ff41,
+        0 0 80px #00ff41,
+        0 0 120px #00ff41;
+    }
+
+    .subtitle{
+      text-align:center;
+      color:#00ffcc;
+      font-size:1rem;
+      margin-bottom:2.5rem;
+      text-shadow:0 0 6px rgba(0,255,204,.6);
+    }
+
+    /* ===== TERMINAL PANEL ===== */
+    .terminal{
+      background:var(--panel);
+      border:2px solid var(--green);
+      border-radius:12px;
+      padding:2rem;
+      box-shadow:0 0 25px rgba(0,255,65,.15);
+    }
+
+    h2{
+      color:#00cc33;
+      margin:2rem 0 .6rem;
+    }
+    h2::before{content:"## ";color:var(--dim);}
+
+    .prompt{color:#00cc33;}
+    .command{color:var(--info);}
+    .output{margin:0 0 1.2rem 1.5rem;line-height:1.6;}
+
+    a{color:var(--info);text-decoration:none;}
+    a:hover{color:var(--neon);}
+
+    footer{
+      text-align:center;
+      margin-top:3rem;
+      color:var(--dim);
+      border-top:1px solid var(--dim);
+      padding-top:1rem;
+    }
+
+    /* küçük ekran */
+    @media(max-width:768px){
+      .hero-name{font-size:2.8rem;}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- ===== NEON İSİM ===== -->
+    <div class="hero-name">AHMET GÜRLER</div>
+    <div class="subtitle">
+      Management Information Systems Student | Haliç University
+    </div>
+
+    <!-- ===== TERMINAL ===== -->
+    <div class="terminal">
+
+      <div class="output">
+        <span class="prompt">$</span> <span class="command">whoami</span><br>
+        Ahmet Gürler — MIS Student @ Haliç University
+      </div>
+
+      <!-- ABOUT -->
+      <section>
+        <h2>About</h2>
+        <div class="output">
+          Hello! I’m Ahmet Gürler, a Management Information Systems student at Haliç University.<br>
+          I’m interested in software development, web technologies and artificial intelligence.<br>
+          I enjoy building simple but effective digital solutions and improving my skills every day.
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section>
+        <h2>Skills</h2>
+        <div class="output">
+          • Python<br>
+          • HTML / CSS<br>
+          • JavaScript (basic)<br>
+          • Git & GitHub<br>
+          • SQL (basic)
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section>
+        <h2>Education</h2>
+        <div class="output">
+          Haliç University — Management Information Systems<br>
+          2023 – Present
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section>
+        <h2>Projects</h2>
+        <div class="output">
+          • Personal Portfolio Website<br>
+          • Simple Python Games<br>
+          • Basic Database Applications
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section>
+        <h2>Contact</h2>
+        <div class="output">
+          Email: <a href="mailto:ahmet@example.com">ahmet@example.com</a><br>
+          GitHub: <a href="https://github.com/ahmetgu87-dot" target="_blank">github.com/ahmetgu87-dot</a>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        © 2026 Ahmet Gürler — Built with 💚 & coffee
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>
